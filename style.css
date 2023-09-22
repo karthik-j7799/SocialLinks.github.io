@@ -1,0 +1,114 @@
+body{
+    background-color: rgb(50, 59, 72) ;
+}
+img{
+    height: 200px;
+    display: flex;
+    border-radius: 20%;
+    position: absolute;
+    left:43%;
+    top:120px
+}
+.socials{
+    font-size: 2rem;
+    max-width: 750px;
+    columns: 6;
+    position: absolute;
+    left:470px;
+    bottom: 30%;
+    
+  }
+  h4{
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left:650px;
+  }
+
+.wrapper {
+    height: 90vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    width: 34ch;
+    animation: typing 4s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    color: black;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+    
+
+  @media screen and (max-width:600px) {
+
+    img{
+      height: 150px;
+      
+      border-radius: 20%;
+      position: absolute;
+      left:32%;
+      top:120px
+  }
+  .wrapper {
+    height: 55vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    width: 34ch;
+    animation: typing 4s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1rem;
+    color: black;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  .socials{
+    font-size: 1rem;
+    position: absolute;
+    left:70px;
+    top:370px;
+    
+  }
+  h4{
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom:10px;
+    left:95px;
+  }
+    
+  }
