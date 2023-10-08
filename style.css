@@ -1,40 +1,27 @@
-body{
-    background-color: rgb(50, 59, 72) ;
-}
-img{
-    height: 200px;
-    display: flex;
-    border-radius: 20%;
-    position: absolute;
-    left:43%;
-    top:120px
-}
-.socials{
-    font-size: 2rem;
-    max-width: 750px;
-    columns: 6;
-    position: absolute;
-    left:470px;
-    bottom: 30%;
-    
-  }
-  h4{
-    text-align: center;
-    color: white;
-    position: absolute;
-    bottom: 10px;
-    left:650px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-.wrapper {
-    height: 90vh;
-    /*This part is important for centering*/
-    display: grid;
-    place-items: center;
-  }
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-image: linear-gradient(90deg, #3e32a8, #e310c7 );
+}
+
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 2%;
   
-  .typing-demo {
-    width: 34ch;
+}
+.bio{
+  margin: auto;
+  height: 5%;
+  width: 34ch;
     animation: typing 4s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -42,73 +29,234 @@ img{
     font-family: monospace;
     font-size: 2em;
     color: black;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
-    
+}
 
-  @media screen and (max-width:600px) {
+section.profile-picture{
+  text-align: center;
+}
+section.profile-picture img{
+  max-width: 220px;
+  border-radius: 50%;
+}
 
-    img{
-      height: 150px;
-      
-      border-radius: 20%;
-      position: absolute;
-      left:32%;
-      top:120px
-  }
-  .wrapper {
-    height: 55vh;
-    /*This part is important for centering*/
-    display: grid;
-    place-items: center;
-  }
+section.links{
+  font-size: 200%;
+  margin: auto;
+  margin-top: 5%;
+  max-width: 100%;
   
-  .typing-demo {
-    width: 34ch;
-    animation: typing 4s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: monospace;
-    font-size: 1rem;
-    color: black;
+}
+section.links a{
+  max-width: 100%;
+  margin:0 30px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+.footer {
+  font-size: large;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(249, 6, 201, 0);
+  color: white;
+  text-align: center;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0
   }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
+}
+
+@media (max-width:756px ){
+
+  section.profile-picture img{
+    margin: auto;
+    margin-top: 10%;
+    max-width: 170px;
+    border-radius: 50%;
+
   }
-  .socials{
-    font-size: 1rem;
-    position: absolute;
-    left:70px;
-    top:370px;
+  section.links{
+    font-size: 200%;
+    margin: auto;
+    margin-top: 15%;
+    max-width: 100%;
     
   }
-  h4{
-    text-align: center;
-    color: white;
-    position: absolute;
-    bottom:10px;
-    left:95px;
-  }
+
+  section.links a{
+    
+    margin: auto;
     
   }
+  .bio{
+    margin: auto;
+    margin-top: 7%;
+    font-size: 1.5rem
+    
+  }
+  
+}
+
+@media (max-width: 470px){
+
+  section.profile-picture img{
+    max-width: 150px;
+    border-radius: 50%;
+  }
+  section.links{
+    font-size: 180%;
+    margin: auto;
+    margin-top: 20%;
+    max-width: 100%;
+    
+  }
+
+  section.links a{
+    
+    margin: auto;
+    
+  }
+
+  .bio{
+    margin: auto;
+    margin-top: 14%;
+    font-size: 1.3rem;
+  }
+
+}
+
+@media (max-width: 425px){
+
+  section.profile-picture img{
+    max-width: 150px;
+    border-radius: 50%;
+  }
+  section.links{
+    font-size: 140%;
+    margin: auto;
+    margin-top: 20%;
+    max-width: 100%;
+    
+  }
+
+  section.links a{
+    
+    margin: auto;
+    
+  }
+
+  .bio{
+    margin: auto;
+    margin-top: 14%;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 350px){
+
+  section.profile-picture img{
+    max-width: 150px;
+    border-radius: 50%;
+  }
+  section.links{
+    font-size: 130%;
+    margin: auto;
+    margin-top: 20%;
+    max-width: 100%;
+    
+  }
+
+  section.links a{
+    
+    margin: auto;
+    
+  }
+
+  .bio{
+    margin: auto;
+    margin-top: 14%;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 300px){
+
+  section.profile-picture img{
+    max-width: 150px;
+    border-radius: 50%;
+  }
+  section.links{
+    font-size: 120%;
+    margin: auto;
+    margin-top: 20%;
+    max-width: 100%;
+    
+  }
+
+  section.links a{
+    
+    margin: auto;
+    
+  }
+
+  .bio{
+    margin: auto;
+    margin-top: 14%;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 270px){
+
+  section.profile-picture img{
+    max-width: 150px;
+    border-radius: 50%;
+  }
+  section.links{
+    font-size: 100%;
+    margin: auto;
+    margin-top: 20%;
+    max-width: 100%;
+    
+  }
+
+  section.links a{
+    
+    margin: auto;
+    
+  }
+
+  .bio{
+    margin: auto;
+    margin-top: 14%;
+    font-size: x-small;
+  }
+}
+@media (max-width: 270px){
+
+  section.links{
+    font-size:small;
+    margin: auto;
+    margin-top: 20%;
+    max-width: 100%;
+    
+  }
+}
+@media (max-width: 174px){
+  section.links{
+    font-size:small;
+    margin: auto;
+    margin-top: 20%;
+    max-width: 100%;
+    
+  }
+}
